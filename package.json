@@ -1,6 +1,6 @@
 {
   "name": "gitea-api",
-  "version": "1.17.0-3",
+  "version": "1.17.1-1",
   "description": "Typescript client for gitea-api",
   "author": "openapi-typescript-codegen Contributors",
   "repository": {
