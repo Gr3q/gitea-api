@@ -2110,7 +2110,7 @@ export class RepositoryService {
          */
         id: number,
         /**
-         * The name of the commit/branch/tag. Default the repository’s default branch (usually master)
+         * The name of the commit/branch/tag, indicates which commit will be loaded to the webhook payload.
          */
         ref?: string,
     }): CancelablePromise<void> {

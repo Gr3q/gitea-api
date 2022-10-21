@@ -34,7 +34,7 @@ export class GiteaApi {
     constructor(config?: Partial<OpenAPIConfig>, HttpRequest: HttpRequestConstructor = FetchHttpRequest) {
         this.request = new HttpRequest({
             BASE: config?.BASE ?? '/api/v1',
-            VERSION: config?.VERSION ?? '1.17.1',
+            VERSION: config?.VERSION ?? '1.17.2',
             WITH_CREDENTIALS: config?.WITH_CREDENTIALS ?? false,
             CREDENTIALS: config?.CREDENTIALS ?? 'include',
             TOKEN: config?.TOKEN,

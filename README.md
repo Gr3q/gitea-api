@@ -34,6 +34,6 @@ Generated with (from repo folder):
 
 ```bash
 cd ..
-npm --global -i openapi-typescript-codegen
+npm --global i openapi-typescript-codegen
 openapi -c fetch -o ./gitea-api/ -i {gitea-url}/swagger.v1.json --name="GiteaApi" --useOptions
 ```
