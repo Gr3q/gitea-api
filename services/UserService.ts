@@ -863,9 +863,19 @@ export class UserService {
      * @throws ApiError
      */
     public userCurrentTrackedTimes({
+        page,
+        limit,
         since,
         before,
     }: {
+        /**
+         * page number of results to return (1-based)
+         */
+        page?: number,
+        /**
+         * page size of results
+         */
+        limit?: number,
         /**
          * Only show times updated after the given time. This is a timestamp in RFC 3339 format
          */
@@ -879,6 +889,8 @@ export class UserService {
             method: 'GET',
             url: '/user/times',
             query: {
+                'page': page,
+                'limit': limit,
                 'since': since,
                 'before': before,
             },
